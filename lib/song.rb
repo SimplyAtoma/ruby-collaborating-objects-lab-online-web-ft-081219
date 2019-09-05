@@ -21,7 +21,8 @@ class Song
     Artist.all.each{ |name|
       if name == artist_name
         @artist = name 
-      elsif name == Artist.all.last
+      end 
+      if name == Artist.all.last.name 
         @artist = Artist.new(artist_name)
       end
     }
