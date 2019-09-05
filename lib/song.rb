@@ -18,6 +18,6 @@ class Song
   end
   
   def artist_name=(artist_name)
-    Artist.all.index(artist_name)
+    
   end
 end
