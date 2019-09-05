@@ -18,7 +18,7 @@ class Song
   end
   
   def artist_name=(artist_name)
-    Artist.all.each{ |name|
+    Artist.all.index{ |name|
       if name == artist_name
         @artist = name 
       end 
