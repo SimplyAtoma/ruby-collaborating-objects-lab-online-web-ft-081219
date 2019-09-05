@@ -18,13 +18,6 @@ class Song
   end
   
   def artist_name=(artist_name)
-    Artist.all.index{ |name|
-      if name == artist_name
-        @artist = name 
-      end 
-      if name == Artist.all.last.name 
-        @artist = Artist.new(artist_name)
-      end
-    }
+    Artist.all.index(artist_name)
   end
 end
